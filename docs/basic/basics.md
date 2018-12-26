@@ -2,6 +2,7 @@
 layout: default
 title: Basics
 nav_order: 2
+has_children: true
 permalink: /basics
 ---
 
@@ -11,6 +12,16 @@ permalink: /basics
 Let's start with the basics that we need to construct this thing.
 
 ---
+# Navigation Structure
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+----
 
 ## Design
 This environment will be:

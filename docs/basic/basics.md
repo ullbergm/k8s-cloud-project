@@ -7,14 +7,17 @@ permalink: /basics
 ---
 
 # Basics
+{: .no_toc }
 {: .fs-9 }
 
 Let's start with the basics that we need to construct this thing.
 
----
-# Navigation Structure
-{: .no_toc }
+This environment will be:
+- Automated (as much as possible)
+- Highly-Available
+- Secure
 
+---
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -22,12 +25,6 @@ Let's start with the basics that we need to construct this thing.
 {:toc}
 
 ----
-
-## Design
-This environment will be:
-- Automated (as much as possible)
-- Highly-Available
-- Secure
 
 ## Network
 So how do we fulfill the requirements above in regards to networking?
@@ -58,6 +55,7 @@ Kubernetes PersistantVolumeClaims are used to provision the configuration storag
 
 ### Highly-Available
 Ceph provides a replicated storage cluster that insures that no data-loss happens.
+The NAS provides redundant deep storage of the actual content that is being managed.
 
 ### Secure
 

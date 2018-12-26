@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Basic packages
-nav_order: 1
+nav_order: 2
 permalink: /components/basic_packages
 ---
 

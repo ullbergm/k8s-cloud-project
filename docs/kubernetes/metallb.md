@@ -2,7 +2,7 @@
 layout: default
 title: MetalLB
 nav_order: 2
-parent: kubernetes_cluster
+parent: kubernetes
 ---
 
 # MetalLB

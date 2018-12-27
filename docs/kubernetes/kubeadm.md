@@ -12,6 +12,8 @@ parent: Kubernetes Cluster
 ---
 
 ## Kubeadm init
+Only on the first node
+{: .label }
 ```bash
 sudo mkdir -p /config
 cat <<EOF | sudo tee /config/kubeadm-config.yaml
@@ -30,6 +32,8 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
 ## Weave Net
+Only on the first node
+{: .label }
 ```bash
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
 ```
@@ -37,6 +41,8 @@ kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl versio
 ## Wait for it to create the cluster
 
 ## Copy certs
+Only on the first node
+{: .label }
 ```bash
 USER=ubuntu
 HOSTS="192.168.70.12 192.168.70.13"
@@ -55,6 +61,8 @@ done
 ```
 
 ## Move certs
+On each of the other nodes
+{: .label }
 ```bash
 USER=ubuntu
 sudo mkdir -p /etc/kubernetes/pki/etcd
@@ -71,11 +79,15 @@ sudo kubeadm join k8s.ullberg.family:6443 --token ph3pe5.d6vvs77sh3ki7qkw --disc
 ```
 
 ## Untaint masters
+Only on the first node
+{: .label }
 ```bash
 kubectl taint nodes --all node-role.kubernetes.io/master-
 ```
 
 ## Install dashboard
+Only on the first node
+{: .label }
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.1/src/deploy/recommended/kubernetes-dashboard.yaml
 cat <<EOF | kubectl apply -f -

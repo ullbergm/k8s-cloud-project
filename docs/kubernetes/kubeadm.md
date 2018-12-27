@@ -2,7 +2,7 @@
 layout: default
 title: Kubeadm config
 nav_order: 1
-parent: Kubernetes Cluster
+parent: kubernetes
 ---
 
 # Kubeadm config

@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Kubernetes cluster
+title: Kubernetes
 nav_order: 3
 has_children: true
-permalink: /kubernetes_cluster
+permalink: /kubernetes
 ---
 
 # Kubernetes Cluster

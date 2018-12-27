@@ -2,7 +2,7 @@
 layout: default
 title: Ubuntu 16.04
 nav_order: 1
-permalink: /components/ubuntu
+parent: Components
 ---
 
 # Ubuntu 16.04

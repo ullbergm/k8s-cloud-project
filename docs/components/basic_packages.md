@@ -2,7 +2,7 @@
 layout: default
 title: Basic packages
 nav_order: 2
-permalink: /components/basic_packages
+parent: Components
 ---
 
 # Basic packages

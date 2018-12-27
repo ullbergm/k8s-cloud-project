@@ -2,7 +2,7 @@
 layout: default
 title: Nomad
 nav_order: 3
-permalink: /components/nomad
+parent: Components
 ---
 
 # Install Nomad

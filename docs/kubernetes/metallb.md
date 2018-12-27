@@ -12,6 +12,8 @@ parent: Kubernetes Cluster
 ---
 
 ## Install MetalLB LoadBalancer
+Only on the first node
+{: .label }
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.7.3/manifests/metallb.yaml
 cat <<EOF | kubectl apply -f -
